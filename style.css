@@ -1,3 +1,90 @@
+:root{
+    --blue: #93BAFD;
+    --green: #C9FFDF;
+    --black: #161616;
+    --white: #FAFAFA;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--blue);
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    width: 8px;
+}
+
+html::-webkit-scrollbar-track {
+    background-color: var(--black);
+}
+
+
+html::-webkit-scrollbar-thumb {
+    background-color: var(--blue);;
+}
+
+::selection {
+    background-color: var(--green);
+    color:var(--black);
+}
+
+#logo-text{
+    background: linear-gradient(to left, var(--blue), var(--green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.8rem;
+    letter-spacing: .3rem;
+    text-decoration: none;  
+}
+
+body div{
+    background: var(--black);
+    color: var(--white);
+}
+
+header{
+    background-color:var(--black);
+    padding: 1.5rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .5s;
+}
+
+a.nav-link{
+    letter-spacing: 2pt;
+    word-spacing: 22pt;
+}
+
+a.nav-link:hover{
+    font-weight:bold;
+    background: linear-gradient(to left, var(--green), var(--blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main{
+    padding: 2px;
+    background-color: var(--black);
+}
+
 h1{
-    text-align:center;
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    background: linear-gradient(to left, var(--blue), var(--green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p{
+    font-size:1.2em;
 }
