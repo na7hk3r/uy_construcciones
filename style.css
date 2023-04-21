@@ -47,6 +47,7 @@ html::-webkit-scrollbar-thumb {
 body div{
     background: var(--black);
     color: var(--white);
+    font-family: "Raleway", sans-serif;
 }
 
 header{
@@ -83,8 +84,26 @@ h1{
     background: linear-gradient(to left, var(--blue), var(--green));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    letter-spacing: .3rem;
+}
+
+h2{
+    text-align: center;
+    font-size: 70px;
+    font-weight: bold;
+    background: linear-gradient(to right, var(--blue), var(--green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 p{
     font-size:1.2em;
+}
+
+.service {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 0px;
 }
