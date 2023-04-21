@@ -62,7 +62,7 @@ header{
 
 a.nav-link{
     letter-spacing: 2pt;
-    word-spacing: 22pt;
+    word-spacing: 25pt;
 }
 
 a.nav-link:hover{
@@ -70,6 +70,8 @@ a.nav-link:hover{
     background: linear-gradient(to left, var(--green), var(--blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    transform: scale(1.1);
+    transition: all .4s ease;
 }
 
 main{
