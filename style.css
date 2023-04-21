@@ -116,10 +116,11 @@ h3, h4, h5{
 p{
     font-size:1em;
     text-align: left;
+    word-spacing: .1em;
 }
 
 p.redes{
-    font-size:1.3em;
+    font-size:1.2em;
     text-align:right;
     block-size: auto;
     width:100%;
