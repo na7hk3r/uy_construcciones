@@ -98,11 +98,12 @@ h2{
 
 p{
     font-size:1.2em;
+    text-align: justify;
 }
 
 .service {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 2fr;
     grid-template-rows: 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 0px;
