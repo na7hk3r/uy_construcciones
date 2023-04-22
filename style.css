@@ -300,10 +300,10 @@ p.redes{
 
 .go-top-container {
     position: fixed;
-    bottom: 1rem;
-    right: 1rem;
-    width: 6rem;
-    height: 6rem;
+    bottom: 2rem;
+    right: 2rem;
+    width: 2rem;
+    height: 2rem;
     z-index: -1;
 }
 
