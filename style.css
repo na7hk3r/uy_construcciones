@@ -12,6 +12,7 @@
 }
 
 html {
+    font-size:100%;
     scrollbar-width: thin;
     scrollbar-color: var(--blue);
     scroll-behavior: smooth;
@@ -35,13 +36,43 @@ html::-webkit-scrollbar-thumb {
     color:var(--black);
 }
 
+/*      Header      */
+
+.header{
+    background-color:var(--black);
+    padding: 1.5rem 3rem;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .5s;
+}
+
+.header.abajo {
+    backdrop-filter: blur(15px);
+    background: rgba(41,41,41,.3);
+}
+
 #logo-text{
+    font-family: "Raleway", sans-serif;
     background: linear-gradient(to left, var(--blue), var(--green));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1rem;
+    font-size: 1.8rem;
     letter-spacing: .3rem;
     text-decoration: none;  
+}
+
+/*      Home        */
+#home{
+    background-color: var(--black);
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 12rem 0 5rem 0;
 }
 
 body div{
@@ -50,15 +81,6 @@ body div{
     font-family: "Raleway", sans-serif;
 }
 
-header{
-    background-color:var(--black);
-    padding: 1.5rem;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    transition: .5s;
-}
 
 a.nav-link{
     letter-spacing: 1.5pt;
@@ -88,12 +110,14 @@ main{
 
 h1{
     text-align: center;
-    font-size: 100px;
     font-weight: bold;
     background: linear-gradient(to left, var(--blue), var(--green));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    letter-spacing: .3rem;
+    font-size: 2.4px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: .1rem;
+    padding-top: 6rem;
 }
 
 h2{
@@ -119,20 +143,7 @@ p{
     word-spacing: .1em;
 }
 
-p.redes{
-    font-size:1.2em;
-    text-align:right;
-    block-size: auto;
-    width:100%;
-    height:auto;
-}
-
-.svg_redes{
-    padding:10%;
-    margin-top:auto;
-    margin-bottom: auto;
-    align-items: center;
-}
+/*      Servicios        */
 
 .service {
     display: grid;
@@ -163,6 +174,23 @@ p.redes{
     grid-row-gap: 0px;
 }
 
+/*      Contacto        */
+
+p.redes{
+    font-size:1.2em;
+    text-align:right;
+    block-size: auto;
+    width:100%;
+    height:auto;
+}
+
+.svg_redes{
+    padding:10%;
+    margin-top:auto;
+    margin-bottom: auto;
+    align-items: center;
+}
+
 .form-contacto {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -180,7 +208,7 @@ p.redes{
 }
 
 
-/*              */
+/*      Formulario      */
 
 .form-contact input {
     background: var(--white);
@@ -266,4 +294,69 @@ p.redes{
 
 .btn_form--contacto button:active {
     background: var(--blue);
+}
+
+/*      Botón arriba        */
+
+.go-top-container {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 6rem;
+    height: 6rem;
+    z-index: -1;
+}
+
+.go-top-button {
+    width: 0rem;
+    height: 0rem;
+    background: var(--blue);
+    box-shadow: 0px 6px 22px -6px rgba(0,0,0,0.75);
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: .2s;
+}
+
+.go-top-button i {
+    position: absolute;
+    font-size: 1.7rem;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: var(--white);
+    transition: .2s;
+}
+
+.show {
+    z-index: 10;
+}
+
+.show .go-top-button {
+    animation: popup .3s ease-in-out;
+    width: 6rem;
+    height: 6rem;
+    z-index: 11;
+}
+
+.show i {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    50% {
+        width: 7rem;
+        height: 7rem;
+    }
+    100% {
+        width: 6rem;
+        height: 6rem;
+    }
 }
