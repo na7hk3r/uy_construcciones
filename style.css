@@ -323,9 +323,6 @@ p.redes{
     text-align: right;
 }
 
-.container_text-footer a {
-    text-decoration: none;
-}
 .container_text--footer span:nth-child(1),
 .container_text--footer span:nth-child(3) {
     color: var(--white);
@@ -333,7 +330,7 @@ p.redes{
 
 .container_text--footer img {
     width: 1.2rem;
-    margin: 0 .2rem;
+    margin: .2rem;
 }
 
 .container_text--footer span:nth-child(4) {
