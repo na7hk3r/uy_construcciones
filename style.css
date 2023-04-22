@@ -40,7 +40,7 @@ html::-webkit-scrollbar-thumb {
 
 .header{
     background-color:var(--black);
-    padding: 1.5rem 3rem;
+    padding: 1rem 1rem;
     align-items: center;
     position: fixed;
     width: 100%;
@@ -53,6 +53,10 @@ html::-webkit-scrollbar-thumb {
 .header.abajo {
     backdrop-filter: blur(15px);
     background: rgba(41,41,41,.3);
+}
+
+#header{
+    padding-top: 5em;
 }
 
 #logo-text{
@@ -117,7 +121,7 @@ h1{
     font-size: 2.4px;
     font-family: "Raleway", sans-serif;
     letter-spacing: .1rem;
-    padding-top: 6rem;
+    padding-top: .5rem;
 }
 
 h2{
@@ -143,8 +147,10 @@ p{
     word-spacing: .1em;
 }
 
-/*      Servicios        */
+/*     Presentacion     */
 
+
+/*      Servicios        */
 .service {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -211,7 +217,7 @@ p.redes{
 /*      Formulario      */
 
 .form-contact input {
-    background: var(--white);
+    background: linear-gradient(var(--white) 80%, var(--blue));
     border: 3px solid var(--blue);
     width: 100%;
     height: auto;
@@ -234,7 +240,7 @@ p.redes{
 }
 
 .form-contact textarea {
-    background: var(--white);
+    background: linear-gradient(var(--white) 80%, var(--green));
     border: 3px solid var(--green);
     width: 100%;
     height: auto;
@@ -286,7 +292,7 @@ p.redes{
 
 .btn_form--contacto button:hover {
     background: linear-gradient(to right, var(--blue) 50%, var(--green));
-    color: var(--white);
+    color: var(--black);
     transform: scale(1.1);
     box-shadow: 0px 9px 15px -1px rgba(0,0,0,0.20);
     transition: all .4s ease;
@@ -310,7 +316,7 @@ p.redes{
 .go-top-button {
     width: 0rem;
     height: 0rem;
-    background: var(--blue);
+    background:linear-gradient(to left, var(--blue) 50%, var(--green));
     box-shadow: 0px 6px 22px -6px rgba(0,0,0,0.75);
     border-radius: 50%;
     cursor: pointer;
