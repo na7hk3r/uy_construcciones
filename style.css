@@ -154,6 +154,10 @@ p{
 }
 
 /*     Presentacion     */
+.quienes div{
+    margin-top: -200px;
+    background: transparent;
+}
 
 /*      Servicios        */
 .service {
