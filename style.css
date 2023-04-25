@@ -230,6 +230,10 @@ p.redes{
 
 /*      Formulario      */
 
+.map-div3{
+    margin-top: 35%;
+}
+
 .container_text--contacto {
     width: auto;
     height: fit-content;
@@ -436,12 +440,36 @@ p.redes{
         width:auto;
         font-size: .6rem;
     }
-    #contacto, .form-contacto, .links-div1, .form-div2, map-div3 {
-        width:auto;
+
+    #img-landing{
+        margin-top: 20%;
+    }
+
+    .card-body p{
+        text-align: left;
+        line-height: 18px;
+    }
+
+    .card-body h3{
+        width: auto;
+        font-size: 2em;
+    }
+
+    #contacto, .form-contacto, .links-div1, .form-div2, .map-div3 {
+        width: auto;
+        display: block;
+    }
+
+    .form-div2{
+        margin-top: 50%;
+    }
+
+    .map-div3{
+        margin-top: 20%;
     }
 
     div > #icons {
-        width:auto;
+        width: auto;
         height: auto;
     }
     
