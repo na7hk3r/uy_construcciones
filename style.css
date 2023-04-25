@@ -39,17 +39,17 @@ html::-webkit-scrollbar-thumb {
 /*      Header      */
 
 .construbar{
-    width:100%;
+    width:auto;
     height:auto;
     overflow:hidden;
 }
 
 .header{
     background-color:var(--black);
-    padding: 1rem 1rem;
     align-items: center;
     position: fixed;
     width: 100%;
+    height: auto;
     top: 0;
     left: 0;
     z-index: 1;
@@ -99,16 +99,16 @@ a.nav-link{
 
 a.nav-link:hover{
     font-weight:bold;
-    background: linear-gradient(to left, var(--green), var(--blue));
+    background: linear-gradient(to left, var(--green) 50%, var(--blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transform: scale(1.1);
+    transform: scale(1.0);
     transition: all .4s ease;
 }
 
 a.nav-link:active{
     font-weight:bold;
-    background: linear-gradient(to left, var(--green), var(--blue));
+    background: linear-gradient(to left, var(--green) 50%, var(--blue));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -148,15 +148,20 @@ h3, h4, h5{
 }
 
 p{
-    font-size:1em;
+    font-family: 'Raleway', sans-serif;
+    font-size:1.5em;
     text-align: left;
     word-spacing: .1em;
 }
 
 /*     Presentacion     */
 .quienes div{
-    margin-top: -200px;
+    margin-top: -18%;
     background: transparent;
+}
+
+.quienes p {
+    font-size:1em;
 }
 
 /*      Servicios        */
@@ -209,7 +214,7 @@ p.redes{
 .form-contacto {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(2, 1fr);
+    /*grid-template-rows: repeat(2, 1fr);*/
     grid-column-gap: 20px;
     grid-row-gap: 0px;
     }
@@ -224,6 +229,20 @@ p.redes{
 
 
 /*      Formulario      */
+
+.container_text--contacto {
+    width: auto;
+    height: fit-content;
+}
+
+.container_text--contacto p {
+    font-size: 1.6rem;
+    font-family: 'Raleway', sans-serif;
+    color: var(--white);
+    margin-bottom: 3rem;
+    letter-spacing: 1px;
+    line-height: 2.3rem;
+}
 
 .form-contact input {
     background: linear-gradient(var(--white) 80%, var(--blue));
@@ -310,6 +329,7 @@ p.redes{
 .btn_form--contacto button:active {
     background: var(--blue);
 }
+
 
 /*      Footer      */
 
@@ -404,4 +424,25 @@ p.redes{
         width: 6rem;
         height: 6rem;
     }
+}
+
+@media screen and (max-width:480px){
+
+    main{
+        width: auto;
+    }
+
+    .header, .container-fluid, .construbar, #logo-text{
+        width:auto;
+        font-size: .6rem;
+    }
+    #contacto, .form-contacto, .links-div1, .form-div2, map-div3 {
+        width:auto;
+    }
+
+    div > #icons {
+        width:auto;
+        height: auto;
+    }
+    
 }
