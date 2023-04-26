@@ -200,6 +200,7 @@ p{
     grid-row-gap: 0px;
 }
 
+
 /*      Contacto        */
 
 p.redes{
@@ -467,6 +468,16 @@ p.redes{
     .carousel{
         width: auto;
         height: 300px;
+    }
+
+    .obra-destacada{
+        width: auto;
+        height: 300px;
+    }
+
+    .obra-destacada h2:first-child {
+        display:block;
+        margin-top:10%;
     }
 
 
