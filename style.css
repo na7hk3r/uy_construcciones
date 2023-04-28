@@ -70,6 +70,7 @@ html::-webkit-scrollbar-thumb {
     font-family: "Raleway", sans-serif;
     background: linear-gradient(to left, var(--blue), var(--green));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 1.5rem;
     letter-spacing: .3rem;
@@ -92,6 +93,46 @@ body div{
     font-family: "Raleway", sans-serif;
 }
 
+a.btnWpp {
+    margin-top:6%;
+    background: linear-gradient(to right, #25d366, #075e54);
+    background-color: #25d366;
+    color: #fff;
+    font-family: Trebuchet MS;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    padding: 14px 15px;
+    border: 0px solid #000;
+    border-radius: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: -1;
+}
+
+a.btnWpp span {
+    margin-right: 15px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(assets/images/wpp.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(0deg);
+    color: white;
+}
+
+a.btnWpp:hover {
+    background: linear-gradient(to right, #58d87e, #517871);
+    background-color: #58d87e;
+}
+
+a.btnWpp:active {
+    transform: scale(0.95);
+}
+
 a:link, a:visited{
     text-decoration: none;
     color: var(--white);
@@ -106,6 +147,7 @@ a.nav-link:hover{
     font-weight:bold;
     background: linear-gradient(to left, var(--green) 50%, var(--blue));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     transform: scale(1.0);
     transition: all .4s ease;
@@ -115,6 +157,7 @@ a.nav-link:active{
     font-weight:bold;
     background: linear-gradient(to left, var(--green) 50%, var(--blue));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -128,6 +171,7 @@ h1{
     font-weight: bold;
     background: linear-gradient(to left, var(--blue), var(--green));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 2.4px;
     font-family: "Raleway", sans-serif;
@@ -141,6 +185,7 @@ h2{
     font-weight: bold;
     background: linear-gradient(to right, var(--blue), var(--green));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -149,6 +194,7 @@ h3, h4, h5{
     font-weight: bold;
     background: linear-gradient(to left, var(--blue) 30%, var(--green));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -171,7 +217,7 @@ p{
 }
 
 .quienes h1 {
-    margin-top: 10%;
+    margin-top: 5%;
 }
 
 /*      Servicios        */
@@ -243,10 +289,6 @@ p.redes{
 
 
 /*      Formulario      */
-
-.map-div3{
-    /* margin-top: 10%; */
-}
 
 .container_text--contacto {
     width: auto;
