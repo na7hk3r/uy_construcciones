@@ -92,6 +92,10 @@ body div{
     font-family: "Raleway", sans-serif;
 }
 
+a:link, a:visited{
+    text-decoration: none;
+    color: var(--white);
+}
 
 a.nav-link{
     letter-spacing: 1.5pt;
@@ -202,6 +206,9 @@ p{
 
 
 /*      Contacto        */
+.redes, .datos{
+    font-size:20%;
+}
 
 p.redes{
     font-size:1.2em;
@@ -238,7 +245,7 @@ p.redes{
 /*      Formulario      */
 
 .map-div3{
-    margin-top: 35%;
+    /* margin-top: 10%; */
 }
 
 .container_text--contacto {
@@ -443,7 +450,14 @@ p.redes{
         width: auto;
     }
 
-    .header, .container-fluid, .construbar, #logo-text{
+    #logo-text{
+        font-size: .7rem;
+        text-align: left;
+        width:auto;
+        margin:auto;
+    }
+
+    .header, .container-fluid, .construbar{
         width:auto;
         font-size: .6rem;
     }
@@ -479,7 +493,6 @@ p.redes{
         display:block;
         margin-top:10%;
     }
-
 
     .card-body p{
         text-align: left;
