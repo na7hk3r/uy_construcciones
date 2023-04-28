@@ -564,4 +564,10 @@ p.redes{
         height: auto;
     }
     
+    .show .go-top-button {
+        animation: popup .3s ease-in-out;
+        width: 4rem;
+        height: 4rem;
+        z-index: 11;
+    }
 }
