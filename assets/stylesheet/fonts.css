@@ -1,0 +1,162 @@
+/* Carga de fuentes Raleway con @font-face para optimización */
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Definición de clases de utilidad para personalización de fuentes */
+.font-thin {
+    font-weight: 100;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.font-semibold {
+    font-weight: 600;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.font-black {
+    font-weight: 900;
+}
+
+/* Tamaños de fuente responsivos */
+:root {
+    --font-size-xs: 0.75rem;   /* 12px */
+    --font-size-sm: 0.875rem;  /* 14px */
+    --font-size-base: 1rem;    /* 16px */
+    --font-size-md: 1.125rem;  /* 18px */
+    --font-size-lg: 1.25rem;   /* 20px */
+    --font-size-xl: 1.5rem;    /* 24px */
+    --font-size-2xl: 1.875rem; /* 30px */
+    --font-size-3xl: 2.25rem;  /* 36px */
+    --font-size-4xl: 3rem;     /* 48px */
+    --font-size-5xl: 3.75rem;  /* 60px */
+    
+    --line-height-tight: 1.25;
+    --line-height-snug: 1.375;
+    --line-height-normal: 1.5;
+    --line-height-relaxed: 1.625;
+    --line-height-loose: 2;
+}
+
+/* Clases de utilidad para tamaños de fuente */
+.text-xs { font-size: var(--font-size-xs); }
+.text-sm { font-size: var(--font-size-sm); }
+.text-base { font-size: var(--font-size-base); }
+.text-md { font-size: var(--font-size-md); }
+.text-lg { font-size: var(--font-size-lg); }
+.text-xl { font-size: var(--font-size-xl); }
+.text-2xl { font-size: var(--font-size-2xl); }
+.text-3xl { font-size: var(--font-size-3xl); }
+.text-4xl { font-size: var(--font-size-4xl); }
+.text-5xl { font-size: var(--font-size-5xl); }
+
+/* Espaciado de líneas */
+.leading-tight { line-height: var(--line-height-tight); }
+.leading-snug { line-height: var(--line-height-snug); }
+.leading-normal { line-height: var(--line-height-normal); }
+.leading-relaxed { line-height: var(--line-height-relaxed); }
+.leading-loose { line-height: var(--line-height-loose); }
+
+/* Media queries para tamaños de fuente responsivos */
+@media screen and (max-width: 768px) {
+    :root {
+        --font-size-2xl: 1.7rem;
+        --font-size-3xl: 2rem;
+        --font-size-4xl: 2.5rem;
+        --font-size-5xl: 3rem;
+    }
+    
+    h1 {
+        font-size: var(--font-size-2xl);
+    }
+    
+    h2 {
+        font-size: var(--font-size-xl);
+    }
+    
+    p {
+        font-size: var(--font-size-base);
+    }
+    
+    .header-title {
+        font-size: var(--font-size-3xl);
+    }
+    
+    .header-subtitle {
+        font-size: var(--font-size-lg);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    :root {
+        --font-size-xl: 1.25rem;
+        --font-size-2xl: 1.5rem;
+        --font-size-3xl: 1.75rem;
+    }
+    
+    h1 {
+        font-size: var(--font-size-xl);
+    }
+    
+    h2 {
+        font-size: var(--font-size-lg);
+    }
+    
+    p {
+        font-size: var(--font-size-sm);
+    }
+    
+    .card-title {
+        font-size: var(--font-size-lg);
+    }
+    
+    .header-title {
+        font-size: var(--font-size-2xl);
+    }
+    
+    .header-subtitle {
+        font-size: var(--font-size-base);
+    }
+}
