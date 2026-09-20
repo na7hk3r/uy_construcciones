@@ -1,10 +1,30 @@
-# UY Construcciones | Landing page para empresa constructora
+# UY Construcciones
 
-  <div align="center">
-    <img src="https://github.com/na7hk3r/uy_construcciones/assets/104522465/3ea17b49-d40d-4cf3-ab8e-87d2764bd07e" width="100%" height="auto" />
-  </div>
+Landing page moderna y estática para UY Construcciones, empresa constructora uruguaya con más de 20 años de experiencia en obra civil, construcción llave en mano e infraestructura.
 
-## · Desarrollado en HTML5, CSS3 y JavaScript. <img width="10%" height="auto" margin-top="5px" src="https://user-images.githubusercontent.com/104522465/216482629-9377f6cd-fab4-4782-bb9b-7955dde461d3.png" align="right" width="100" />
-### · Animado con librerìa AOS (Animation on scroll) 
-### · Full responsive
-### · Dominio y mail personalizado
+## Stack
+
+- HTML semántico
+- Tailwind CSS (Play CDN) con configuración de diseño personalizada
+- Google Fonts (Manrope, Space Grotesk)
+- Material Symbols (íconos)
+- JavaScript vanilla (menú móvil, navegación activa, botón volver arriba, formulario de contacto)
+
+## Deploy
+
+Sitio estático publicado en GitHub Pages con CNAME `www.uyconstrucciones.com.uy`.
+
+## Estructura
+
+```
+index.html          — página completa (CDN + configuración inline + script inline)
+assets/images/      — fotografías reales de obra y favicon
+```
+
+## Formulario de contacto
+
+El formulario no envía datos a un servidor: arma un mensaje prefijado con los datos cargados y lo abre en WhatsApp (`wa.me/598094172582`) en una pestaña nueva, mostrando una confirmación en la página.
+
+## Datos de contacto
+
+Los datos reales de contacto y redes sociales viven en la sección CONTACTO de `index.html`: teléfono 094 172 582, correos `construccionesuy1@gmail.com` e `info@uyconstrucciones.com.uy`, Instagram @Uy_construcciones2024 y Facebook UY Construcciones.
