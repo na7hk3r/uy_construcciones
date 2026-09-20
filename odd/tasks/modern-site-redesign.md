@@ -21,11 +21,18 @@ Replace the legacy `index.html` (custom CSS + AOS + Raleway) with a modernized, 
 - Do not touch `.atl/` or `odd/` files.
 
 ## Tasks
-- [ ] T1 — Migrate design into `index.html`: copy from `/tmp/opencode/stitch-design.html`, keep Tailwind config/styles, apply the full copy replacement map (see writer brief), swap in local real photos.
-- [ ] T2 — Restore head: SEO/OG/Twitter meta, canonical, hreflang, theme-color, favicon, JSON-LD (GeneralContractor with real data), single fonts link + preconnect, proper `<title>`.
-- [ ] T3 — Fix UX/functional gaps: mobile hamburger menu, active nav on scroll, go-top button, real Google Maps iframe, `for`/`id` on form fields + autocomplete, submit → prefilled WhatsApp message, auto year, `loading=lazy`/`fetchpriority`.
-- [ ] T4 — Update README; delete legacy `main.js`, `style.css`, `assets/stylesheet/`, `assets/fonts/`.
-- [ ] T5 — Verify locally: serve + curl checks (no `lh3.googleusercontent.com`, no `data-alt`, real FB URL, map embed present, key strings), parse sanity, then work-unit commits on `feat/modern-landing-page`.
+- [x] T1 — Migrate design into `index.html`: copy from `/tmp/opencode/stitch-design.html`, keep Tailwind config/styles, apply the full copy replacement map (see writer brief), swap in local real photos.
+- [x] T2 — Restore head: SEO/OG/Twitter meta, canonical, hreflang, theme-color, favicon, JSON-LD (GeneralContractor with real data), single fonts link + preconnect, proper `<title>`.
+- [x] T3 — Fix UX/functional gaps: mobile hamburger menu, active nav on scroll, go-top button, real Google Maps iframe, `for`/`id` on form fields + autocomplete, submit → prefilled WhatsApp message, auto year, `loading=lazy`/`fetchpriority`.
+- [x] T4 — Update README; delete legacy `main.js`, `style.css`, `assets/stylesheet/`, `assets/fonts/`.
+- [x] T5 — Verify locally: serve + curl checks (no `lh3.googleusercontent.com`, no `data-alt`, real FB URL, map embed present, key strings), parse sanity, then work-unit commits on `feat/modern-landing-page`.
+
+## Verification evidence
+- Writer checks all green: HTTP 200 (index + images), lh3/data-alt/alert = 0, Material+Symbols = 1, fb-profile = 4, maps/embed = 1, wa.me = 3, node sanity ok, config/style blocks byte-identical to source.
+- Parent spot check: professional copy strings present, real emails/FB/map present, mobile-menu/contact-form/go-top/year present, JSON-LD/OG/favicon present, 0 AI-mock refs.
+- Commits on `feat/modern-landing-page`:
+  - 71890bc `feat: modernize landing page with professional copy and real imagery`
+  - 84739a8 `chore: remove legacy code assets replaced by the new design`
 
 ## Acceptance criteria
 - Page renders the dark design at desktop and mobile widths; no horizontal overflow; mobile nav opens/closes.
